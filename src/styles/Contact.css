@@ -1,0 +1,72 @@
+
+.Contact {
+    background-image: linear-gradient(#bfc6cc, #757578);
+      background-repeat: no-repeat;
+      color: white;
+
+      min-height: 100vh;
+    
+}
+
+.Contact h1 {
+    color: #edeeeb;
+    margin-top: 1.5em;
+    -webkit-filter: drop-shadow(3px 3px 3px #000000);
+        filter: drop-shadow(3px 3px 3px #000000);
+}
+
+.contact-content  {
+    text-align: left;
+    margin: 3em 10em;
+    font-size: 1em;
+
+    padding: 1em 3em;
+    border: 3px solid #3e96f4;
+    border-radius: 1em;
+    background-color: #31393c;
+    -webkit-filter: drop-shadow(3px 3px 3px #000000);
+        filter: drop-shadow(3px 3px 3px #000000);
+    line-height: 1.8em;
+}
+
+.contact-content p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 2em;
+    -webkit-filter: drop-shadow(3px 3px 3px #000000);
+        filter: drop-shadow(3px 3px 3px #000000);
+}
+
+.contact-content .socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin: 1em;
+}
+
+
+/* Media query for screens 768px and below (tablets and phones) */
+@media (max-width: 768px) {
+    .contact-content {
+      margin: 2em; 
+      font-size: 1.2em; 
+      padding: 1em; 
+    }
+  
+    .contact-content p {
+      font-size: 1em;
+      text-align: center;
+      line-height: 1.4em; 
+      padding: 1em; 
+    }
+  
+    .contact-content .socials {
+      margin: 1em 0; 
+    }
+  
+    .Contact h1 {
+      font-size: 1.8em; 
+      margin-top: 1em; 
+    }
+  }
+  

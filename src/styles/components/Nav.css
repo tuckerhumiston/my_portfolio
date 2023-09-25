@@ -1,0 +1,36 @@
+.Nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #31393c;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,.2);
+
+  }
+  
+  .Nav a {
+    color: white;
+    text-decoration: underline;
+    margin: 1em 1em;
+    -webkit-filter: drop-shadow(2px 2px 2px #000000);
+        filter: drop-shadow(2px 2px 2px #000000);
+  }
+
+  .Nav a.active  {
+    color: #3e96f4;
+    text-decoration: none;
+  }
+  
+
+  /* Media query for screens 768px and below (tablets and phones) */
+@media (max-width: 768px) {
+  .Nav {
+      flex-direction: row; 
+      align-items: center; 
+  }
+
+  .Nav a {
+      margin: 0.5em 0; 
+  }
+}

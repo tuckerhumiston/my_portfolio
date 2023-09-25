@@ -1,0 +1,100 @@
+/* SkillPopup Container */
+.SkillPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.skill-content {
+  background-color: #31393c;
+  padding: 3em;
+  margin: 6em;
+  border-radius: 1em;
+  border: 3px solid #3e96f4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative; /* Ensure the close button is positioned relative to this container */
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 0.7em;
+  right: 0.7em;
+  background-color: #fff;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 0.2em;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #ff0000; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+/* SkillPopup Content */
+.skill-info h2,
+.skill-info p {
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1em;
+  color: white;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.skill-info h2 {
+  font-size: 1.5em;
+}
+
+.skill-info p {
+  font-size: 1.2em;
+}
+
+.skill-image {
+  max-width: 80%;
+  width: 100%;
+  margin: 0.5em;
+}
+
+.skill-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1.5);
+  border: 3px solid white;
+}
+
+/* Media query for screens 768px and below (tablets and phones) */
+@media (max-width: 768px) {
+  .skill-content {
+    background-color: #31393c;
+    padding: 1em;
+    margin: 1em; 
+    border-radius: 1em;
+    border: 3px solid #3e96f4;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-height: 90vh; 
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,72 @@
+.Skills {
+    background-image: linear-gradient(#bfc6cc, #757578);
+
+    background-repeat: no-repeat;
+
+    background-color: #31393c;
+}
+
+.Skills h1 {
+    color: #edeeeb;
+    margin-top: 1em;
+    -webkit-filter: drop-shadow(2px 2px 2px #000000);
+        filter: drop-shadow(2px 2px 2px #000000);
+}
+
+.Skills .skills-intro {
+    color: white;
+    font-size: 1.5em;
+    margin: 2em 4em 4em 4em;
+
+    padding: 1em;
+    border: 3px solid #3e96f4;
+    border-radius: 1em;
+    background-color: #31393c;
+
+    -webkit-filter: drop-shadow(3px 3px 3px #000000);
+        filter: drop-shadow(3px 3px 3px #000000);
+    line-height: 1.8em;
+}
+
+.Skills .skills-intro br {
+    content: "";
+    margin: 6em;
+    display: block;
+    font-size: 24%;
+}
+
+
+.skill-sections {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    z-index: 1;
+
+    
+}
+
+/* Media query for screens 768px and below (tablets and phones) */
+@media (max-width: 768px) {
+    .Skills .skills-intro {
+        font-size: 1.2em;
+        margin: 1em; 
+    }
+
+    .skill-sections {
+        font-size: 1.2rem;
+        
+    }
+}
