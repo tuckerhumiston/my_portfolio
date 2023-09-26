@@ -5,7 +5,7 @@ import Nav from '../components/Nav';
 
 import SkillSection from "../components/SkillSection";
 import SkillPopup from "../components/SkillPopup";
-import skillsData from "../skillsData"; // An array of skills data
+import skillsData from "../skillsData";
 
 
 function Skills() {
@@ -29,7 +29,7 @@ function Skills() {
             this page is where I showcase the technical expertise and knowledge I've accumulated on my journey through the world of technology. 
             <br /><br />
             Below, you'll find a comprehensive list of my skills, spanning programming languages, frameworks, web development concepts, and much more.
-            Feel free to explore each skill, and if you're curious about my experience or projects related to a particular skill, just <u>click on it</u> for more details.
+            Feel free to explore each skill, and if you're curious about my experience or projects related to a particular skill, just <u>click on it for more details</u>.
             </p>
             <div className="skill-sections">
                 {skillsData.map((section) => (
